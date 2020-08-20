@@ -8,7 +8,7 @@
 
 #### canvas
 
-- [小时钟](https://codepen.io/lonmon/pen/KKVezpB)
+- [小时钟](https://codepen.io/longwayya/pen/KKVezpB)
 
 #### js
 
