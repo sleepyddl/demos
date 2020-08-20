@@ -12,4 +12,4 @@
 
 #### js
 
-- [贪吃蛇](httpslongwayya.github.io/greedySnake/)
+- [贪吃蛇](https://longwayya.github.io/greedySnake/)
