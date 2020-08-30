@@ -205,10 +205,10 @@
 
     computed: {
       doinglist() {
-        return this.list.filter(i => i.type === "doing")||[]
+        return this.list?.filter(i => i.type === "doing")||[]
       },
       donelist() {
-        return this.list.filter(i => i.type === "done")||[]
+        return this.list?.filter(i => i.type === "done")||[]
       },
     },
     watch: {
