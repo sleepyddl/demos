@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="runningPage" v-if="!showResultPage">
+      <div class="counter">{{curIndex+1}}/{{appData.length}}</div>
+      <div class="sentence" v-if="!isJump">{{appData[curIndex].sentence}}</div>
+      <div class="sentence" v-else>
+        {{this.sentence[0]}}
+        <span class="answerInSentence" :class="{rightColor:isChoseRight,wrongColor:!isChoseRight}">{{answer}}</span>
+        {{this.sentence[1]}}
+      </div>
+      <div class="buttons">
+        <div v-show="!isJump" :class="{corrent:isChose&&item===answer,wrong:isChose&&item===wrongChoseItem}"
+          @click="checkAnswer(item)" :key="item" v-for="item in options">
+          {{item}}
+        </div>
+        <div v-show="!isJump" class="lookAnswer" @click="lookAnswer">看答案</div>
+        <div v-show="isJump" v-if="isChoseRight" @click="nextQuestion" class="corrent">下一题</div>
+        <div v-show="isJump" v-else class="wrong" @click="reAnswer">重答</div>
+      </div>
+    </div>
+    <div class="resultPage" v-else>
+      <div>正确个数：{{counter}}</div>
+      <div>错误个数：{{20-counter}}</div>
+    </div>
+  </div>
+</body>
+<script type="module">
+  import { originalData } from "./originalData.js"
+  let app = new Vue({
+    el: "#app",
+    data: {
+      appData: [{
+        sentence: "",
+        options: "",
+        answer: "",
+      }],
+      curIndex: 0,
+      isChose: false,
+      isChoseRight: false,
+      wrongChoseItem: "",
+      isJump: false,
+      isFirstTime: true,
+      counter: 0,
+      showResultPage: false,
+      sentence: []
+    },
+    created() {
+      this.getData()
+    },
+    methods: {
+      getData() {
+        this.appData = originalData.map(item => {
+          item.options = item.options.split(",")
+          return item
+        })
+      },
+      checkAnswer(item) {
+        this.isChose = true
+        if (item === this.answer) {
+          this.isFirstTime === true && this.counter++
+          this.isChoseRight = true
+        } else {
+          this.wrongChoseItem = item
+        }
+        setTimeout(() => {
+          this.lookAnswer()
+        }, 500);
+      },
+      answerShowInsentence() {
+        this.sentence = this.appData[this.curIndex].sentence.split("__")
+      },
+      nextQuestion() {
+        if (this.curIndex === 19) {
+          this.showResultPage = true
+        } else {
+          this.isFirstTime = true
+          this.curIndex++
+          this.reSet()
+        }
+      },
+      lookAnswer() {
+        this.isFirstTime = false
+        this.isJump = true
+        this.answerShowInsentence()
+      },
+      reAnswer() {
+        this.reSet()
+      },
+      reSet() {
+        this.isChose = false
+        this.isChoseRight = false
+        this.wrongChoseItem = ""
+        this.isJump = false
+      }
+    },
+    computed: {
+      answer() {
+        return this.appData[this.curIndex].answer
+      },
+      options() {
+        return this.appData[this.curIndex].options
+      }
+    }
+  })
+</script>
+
+</html>
