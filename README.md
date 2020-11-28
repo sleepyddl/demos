@@ -13,6 +13,7 @@
 #### js
 
 - [贪吃蛇](https://longwayya.github.io/greedySnake/)
+- [计算身份证校验位](https://longwayya.github.io/demos/idCard.html)
 
 #### vue
 
