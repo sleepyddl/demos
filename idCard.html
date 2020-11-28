@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="id">
+  <input type="button" value="计算" id="enter">
+  校验位是：<p id="p"></p>
+</body>
+<script>
+  let w = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]
+  let Checkcode = [1, 0, 'X', 9, 8, 7, 6, 5, 4, 3, 2]
+  document.getElementById("enter").addEventListener("click", function () {
+    let id = document.getElementById("id").value.split("")
+    let sum = id.reduce((pre, cur, index) => {
+      return w[index] * cur + pre
+    }, 0)
+    let result = Checkcode[sum % 11]
+    document.getElementById("p").innerHTML = result
+  })
+
+</script>
+
+</html>
