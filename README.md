@@ -9,7 +9,7 @@
 
 #### js
 
-- [贪吃蛇](https://longwayya.github.io/greedySnake/)
+- [贪吃蛇](https://longwayya.github.io/greedy-snake/)
 - [计算身份证校验位](https://longwayya.github.io/demos/idCard.html)
 
 #### vue
@@ -29,4 +29,4 @@
 #### 微信小程序
 
 - AA制计算
-<img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111606999.jpg" alt="小程序码" style="zoom:25%;" />
+- <img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111610514.jpg" alt="小程序码" style="width:100px" />
