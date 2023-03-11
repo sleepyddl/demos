@@ -29,3 +29,7 @@
 
 - [2020淘宝双十一收喵币](https://juejin.im/post/6886126428677472269)
 
+#### 微信小程序
+
+- AA制计算
+![](https://cdn.jsdelivr.net/gh/longwayya/image@main/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230311151249.jpg)
