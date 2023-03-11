@@ -2,9 +2,6 @@
 
 这个仓库记录一些平时写的小东西吧，虽然我写的可能全都是小东西
 
-![92DDA149](https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3217194737,1783063894&fm=26&gp=0.jpg)
-
-给自己加油  哈哈哈哈啊哈
 
 #### canvas
 
@@ -32,4 +29,4 @@
 #### 微信小程序
 
 - AA制计算
-![](https://cdn.jsdelivr.net/gh/longwayya/image@main/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230311151249.jpg)
+![小程序码](https://raw.githubusercontent.com/longwayya/image/master/img/202303111606999.jpg)
