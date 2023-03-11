@@ -1,6 +1,6 @@
 # demos
 
-这个仓库记录一些平时写的小东西吧，虽然我写的可能全都是小东西
+这个仓库记录一些平时写的小东西
 
 
 #### canvas
@@ -29,4 +29,4 @@
 #### 微信小程序
 
 - AA制计算
-![小程序码](https://raw.githubusercontent.com/longwayya/image/master/img/202303111606999.jpg)
+<img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111606999.jpg" alt="小程序码" style="zoom:25%;" />
