@@ -20,7 +20,7 @@
 
 #### react
 
-- [安全协议分析器webscyther](https://longwayya.github.io/webScyther/) 
+- [安全协议分析器webscyther](https://longwayya.github.io/web-scyther/) 
 
 #### autojs
 
