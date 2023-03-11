@@ -29,4 +29,5 @@
 #### 微信小程序
 
 - AA制计算
-- <img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111610514.jpg" alt="小程序码" style="width:100px" />
+
+  <img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111610514.jpg" alt="小程序码" style="width:100px" />
