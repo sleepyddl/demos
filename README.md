@@ -30,4 +30,4 @@
 
 - AA制计算
 
-  <img src="https://raw.githubusercontent.com/longwayya/image/master/img/202303111610514.jpg" alt="小程序码" style="width:100px" />
+  <img src="https://cdn.jsdelivr.net/gh/longwayya/image@master/img/202303111604588.jpg" alt="小程序码" style="width:100px" />
